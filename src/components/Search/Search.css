@@ -1,0 +1,116 @@
+:root {
+    --input-width: 30rem;
+    --input-height: 3.5rem;
+    --input-text: .925rem;
+}
+@media screen and (max-width: 930px) {
+    :root {
+        --input-width: 21rem;
+        --input-height: 3rem;
+        --input-text: .75rem;
+    }
+}
+
+.Search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--comp-b-margin);
+}
+
+
+
+.inputSearch {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    background-color: var(--header-card-background);
+    border-radius: 5px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    width: var(--input-width);
+    height: var(--input-height);
+    cursor: pointer;
+}
+
+input[type="search"] {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--header-card-background);
+    color: var(--text-primary);
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+
+input[type="search"]::placeholder {
+    font-size: var(--input-text);
+    color: var(--text-secondary);
+}
+
+.filterSelect {
+    display: flex;
+    flex-flow: column;
+    gap: .25rem;
+}
+.filterSelect > * {
+    width: 12rem;
+    background-color: var(--header-card-background);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+    font-size: var(--input-text);
+    color: var(--text-primary);
+}
+
+.selectedValue {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: var(--input-height);
+    cursor: pointer;
+    padding: 0 20px 0 24px;
+}
+
+.options {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    z-index: 1;
+    top: calc(.25rem + var(--input-height));
+}
+
+.option {
+    width: 100%;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+}
+
+.option:first-of-type {
+    padding-top: 1rem; 
+}
+
+.option:last-of-type {
+    padding-bottom: 1rem; 
+}
+
+.option:hover {
+    background-color: var(--main-background);
+}
+
+select {
+    display: none;
+    
+}
+
+@media screen and (max-width: 930px){
+    .Search {
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    .selectedValue img {
+        width: 10px;        
+    }
+    
+}

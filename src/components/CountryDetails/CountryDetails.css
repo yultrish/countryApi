@@ -1,0 +1,4 @@
+.CountryDetails {
+    padding: calc(5rem + var(--comp-b-margin)) var(--h-padding);
+    min-height: 100vh;
+}

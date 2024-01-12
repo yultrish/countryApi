@@ -1,0 +1,12 @@
+.errorTitle, .loadingTitle {
+    text-align: center;
+    color: var(--text-secondary);
+}
+.Cards {
+    margin: 0 auto;
+    max-width: 1350px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 74px;
+}

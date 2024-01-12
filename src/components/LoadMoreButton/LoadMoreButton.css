@@ -1,0 +1,16 @@
+.LoadMoreButton {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.LoadMoreButton span {
+    font-size: var(--input-text);
+    color: var(--text-primary);
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+.LoadMoreButton span:hover {
+    color: var(--text-secondary);
+}

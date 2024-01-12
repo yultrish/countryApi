@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+:root {
+  --header-card-background: #FFFFFF;
+  --main-background: #FAFAFA;
+  --text-primary: #111517;
+  --text-secondary: #848484;
+  --h-padding: 5rem;
+  --header-fs: 1.5rem;
+  --comp-b-margin: 3rem;
+}
+
+[data-theme="dark"] {
+  --header-card-background: #2B3844;
+  --main-background: #202C36;
+  --text-primary: #FFFFFF;
+  --text-secondary: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --h-padding: 1rem;
+    --header-fs: 14px;
+    --comp-b-margin: 1.5rem;
+
+  }
+}
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-background);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: var(--header-fs);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

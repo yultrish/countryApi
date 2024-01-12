@@ -1,0 +1,45 @@
+.Card {
+    width: 264px;
+    height: 336px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+    background-color: var(--header-card-background);
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+}
+
+.flagContainer {
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    background-position: center;
+}
+
+.flagContainer img {
+    height: 100%;
+}
+
+.infoContainer {
+    padding: 24px;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.smallerInfo {
+    font-size: 14px;
+    display: flex;
+    flex-flow: column;
+    gap: .5rem;
+}
+.smallerInfo h3 {
+    font-weight: 600;
+}
+.smallerInfo span {
+    font-weight: 300;
+}
