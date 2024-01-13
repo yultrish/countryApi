@@ -20,7 +20,6 @@ const Cards = ({
   searchValue = '',
   isLoading = false,
   isError = false,
-  onClick,
   data = [],
   setCardPage,
 }: CardsProps) => {
