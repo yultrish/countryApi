@@ -2,6 +2,8 @@
     margin: 0 auto;
     max-width: 1330px;
     display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 9rem;
     justify-content: space-between;
 }
@@ -82,6 +84,7 @@ strong {
     .DetailMain {
         flex-flow: column;
         gap: 2.75rem;
+        grid-template-columns: 1fr;
     }
     .detailContainer h2 {
         font-size: 22px;
